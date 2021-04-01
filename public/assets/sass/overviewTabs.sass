@@ -1,0 +1,25 @@
+@import 'variables'
+
+.svelte-tabs
+    ul.svelte-tabs__tab-list
+        margin-bottom: 20px
+        border-bottom: 0
+        li
+            font-family: $caviar_bold
+            background: #f9f9f9
+            color: #333
+            font-size: 15px
+            line-height: 40px
+            border-radius: 20px
+            margin-right: 10px
+            transition: background 0.3s
+            &:last-child
+                margin-right: 0
+            &:hover
+                background: #f1f1f1
+            &.svelte-tabs__selected
+                background: $main_color
+                color: #FFF
+    .svelte-tabs__tab-panel
+        font-family: $caviar_bold
+        color: #555

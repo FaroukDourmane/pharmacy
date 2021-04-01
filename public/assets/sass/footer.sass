@@ -1,0 +1,77 @@
+@import 'variables'
+
+footer
+    .footerLinks
+        padding: 50px
+        background: $main_color
+        display: flex
+        justify-content: center
+        @media screen and (max-width: 830px)
+            padding: 50px 20px
+        @media screen and (max-width: 600px)
+            flex-direction: column
+            align-items: center
+        .linkItem
+            margin: 0 10px
+            background: #1B80CB
+            border-radius: 20px
+            padding: 20px
+            width: 100%
+            max-width: 250px
+            height: 200px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            img
+                margin-bottom: 10px
+            h3
+                color: #FFF
+                font-family: $caviar_bold
+                font-size: 20px
+                margin-bottom: 20px
+            a
+                display: block
+                width: 100%
+                background: #1D6BA5
+                font-family: $caviar_bold
+                color: #FFF
+                line-height: 50px
+                border-radius: 10px
+                text-align: center
+                transition: 0.3s
+                &:hover
+                    background: #FFF
+                    color: #1D6BA5
+            @media screen and (max-width: 765px)
+                padding: 10px
+                h3
+                    font-size: 15px
+                a
+                    font-size: 14px                    
+            @media screen and (max-width: 600px)
+                height: 170px
+                margin: 10px 0
+    .copyrightBar
+        height: 70px
+        background: #333
+        padding: 0 20px
+        display: flex        
+        .logo
+            flex-shrink: 0
+            line-height: 70px
+            img
+                vertical-align: middle
+        .copyrightText
+            color: #FFF
+            font-family: $caviar_bold
+            font-size: 15px
+            line-height: 70px
+            width: 100%
+            text-align: right
+        @media screen and (max-width: 570px)
+            flex-direction: column
+            height: auto
+            align-items: center
+            .copyrightText
+                text-align: center

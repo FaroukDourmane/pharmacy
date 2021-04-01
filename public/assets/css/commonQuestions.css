@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.commonQuestionBox .question {
+  border: 1px #DDDDDD solid;
+  border-radius: 10px;
+  line-height: 60px;
+  padding: 0 20px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  .commonQuestionBox .question {
+    line-height: normal;
+    padding: 20px;
+    padding-right: 40px;
+  }
+}
+.commonQuestionBox .question:hover, .commonQuestionBox .question.active {
+  background: #f9f9f9;
+}
+.commonQuestionBox .question:last-child {
+  margin-bottom: 0;
+}
+.commonQuestionBox .question .toggler {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  height: 25px;
+  line-height: 25px;
+  transform-origin: center;
+  transition: 0.3s;
+}
+.commonQuestionBox .question h4 {
+  font-family: "CaviarDreams_Bold";
+  font-size: 15px;
+  color: #333333;
+}
+.commonQuestionBox .question p {
+  line-height: normal;
+  font-family: "CaviarDreams_Bold";
+  color: #666666;
+  font-size: 17px;
+  border-top: 1px #f1f1f1 solid;
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+.commonQuestionBox .question.active p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  opacity: 1;
+  height: auto;
+}
+.commonQuestionBox .question.active .toggler {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=commonQuestions.css.map */

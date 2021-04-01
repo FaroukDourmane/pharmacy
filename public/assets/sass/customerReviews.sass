@@ -1,0 +1,40 @@
+@import 'variables'
+
+.customerReviewsBox
+    display: flex
+    align-items: center
+    max-width: 1400px
+    margin: 0 auto
+    .reviewControl
+        display: block
+        flex-shrink: 0
+        width: 50px
+        height: 50px
+        line-height: 50px
+        text-align: center
+        background: #FFF
+        border-radius: 50%
+        img
+            vertical-align: -5px
+        &.prevReview
+            img
+                transform-origin: center
+                transform: rotate(180deg)
+    .reviewSlide
+        font-family: $caviar_bold
+        width: 100%
+        h5,p
+            max-width: 450px
+            margin: 0 auto
+            padding-right: 10px
+            @media screen and (max-width: 500px)
+                max-width: 300px
+                text-align: center
+                padding-right: 0
+        h5
+            color: #666666
+            font-size: 17px
+        p
+            color: #333333
+            font-size: 15px
+            margin-bottom: 20px            

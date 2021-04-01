@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.customerReviewsBox {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.customerReviewsBox .reviewControl {
+  display: block;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #FFF;
+  border-radius: 50%;
+}
+.customerReviewsBox .reviewControl img {
+  vertical-align: -5px;
+}
+.customerReviewsBox .reviewControl.prevReview img {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+.customerReviewsBox .reviewSlide {
+  font-family: "CaviarDreams_Bold";
+  width: 100%;
+}
+.customerReviewsBox .reviewSlide h5, .customerReviewsBox .reviewSlide p {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-right: 10px;
+}
+@media screen and (max-width: 500px) {
+  .customerReviewsBox .reviewSlide h5, .customerReviewsBox .reviewSlide p {
+    max-width: 300px;
+    text-align: center;
+    padding-right: 0;
+  }
+}
+.customerReviewsBox .reviewSlide h5 {
+  color: #666666;
+  font-size: 17px;
+}
+.customerReviewsBox .reviewSlide p {
+  color: #333333;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=customerReviews.css.map */

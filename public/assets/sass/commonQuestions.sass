@@ -1,0 +1,51 @@
+@import 'variables'
+
+.commonQuestionBox
+    .question
+        border: 1px #DDDDDD solid
+        border-radius: 10px
+        line-height: 60px
+        padding: 0 20px
+        padding-right: 40px
+        margin-bottom: 10px     
+        cursor: pointer
+        transition: background 0.3s
+        position: relative       
+        @media screen and (max-width: 500px)
+            line-height: normal
+            padding: 20px
+            padding-right: 40px
+        &:hover,&.active
+            background: #f9f9f9
+        &:last-child
+            margin-bottom: 0
+        .toggler
+            position: absolute
+            right: 15px
+            top: 20px
+            height: 25px
+            line-height: 25px
+            transform-origin: center
+            transition: 0.3s
+        h4
+            font-family: $caviar_bold
+            font-size: 15px
+            color: #333333
+        p
+            line-height: normal
+            font-family: $caviar_bold
+            color: #666666
+            font-size: 17px            
+            border-top: 1px #f1f1f1 solid            
+            height: 0
+            opacity: 0
+            padding: 0
+            transition: 0.3s            
+        &.active
+            p
+                padding-top: 10px
+                padding-bottom: 20px
+                opacity: 1
+                height: auto
+            .toggler
+                transform: rotate(180deg)

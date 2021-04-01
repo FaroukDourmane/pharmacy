@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+footer .footerLinks {
+  padding: 50px;
+  background: #4491CB;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 830px) {
+  footer .footerLinks {
+    padding: 50px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .footerLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .footerLinks .linkItem {
+  margin: 0 10px;
+  background: #1B80CB;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .footerLinks .linkItem img {
+  margin-bottom: 10px;
+}
+footer .footerLinks .linkItem h3 {
+  color: #FFF;
+  font-family: "CaviarDreams_Bold";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .footerLinks .linkItem a {
+  display: block;
+  width: 100%;
+  background: #1D6BA5;
+  font-family: "CaviarDreams_Bold";
+  color: #FFF;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+footer .footerLinks .linkItem a:hover {
+  background: #FFF;
+  color: #1D6BA5;
+}
+@media screen and (max-width: 765px) {
+  footer .footerLinks .linkItem {
+    padding: 10px;
+  }
+  footer .footerLinks .linkItem h3 {
+    font-size: 15px;
+  }
+  footer .footerLinks .linkItem a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .footerLinks .linkItem {
+    height: 170px;
+    margin: 10px 0;
+  }
+}
+footer .copyrightBar {
+  height: 70px;
+  background: #333;
+  padding: 0 20px;
+  display: flex;
+}
+footer .copyrightBar .logo {
+  flex-shrink: 0;
+  line-height: 70px;
+}
+footer .copyrightBar .logo img {
+  vertical-align: middle;
+}
+footer .copyrightBar .copyrightText {
+  color: #FFF;
+  font-family: "CaviarDreams_Bold";
+  font-size: 15px;
+  line-height: 70px;
+  width: 100%;
+  text-align: right;
+}
+@media screen and (max-width: 570px) {
+  footer .copyrightBar {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  footer .copyrightBar .copyrightText {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

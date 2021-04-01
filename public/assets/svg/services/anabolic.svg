@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65">
+  <g id="steroids" transform="translate(-1.001 -1)">
+    <path id="Path_101" data-name="Path 101" d="M2.1,398.153a1.1,1.1,0,0,1-.771-1.888l14.778-14.5a1.1,1.1,0,0,1,1.542,1.573l-14.778,14.5a1.1,1.1,0,0,1-.771.315" transform="translate(0 -332.153)" fill="#687492"/>
+    <path id="Path_102" data-name="Path 102" d="M406.106,32.857l-3.9-3.9,7.011-7.011,3.9,3.9Z" transform="translate(-350.275 -18.29)" fill="#bdc3c7"/>
+    <path id="Path_103" data-name="Path 103" d="M140.01,105.413l-7.79-7.79L164.938,64.9l7.79,7.791Z" transform="translate(-114.561 -55.791)" fill="#e4f4f9"/>
+    <path id="Path_104" data-name="Path 104" d="M381,57.068a1.1,1.1,0,0,1-.779-.323L369.318,45.839a1.1,1.1,0,1,1,1.558-1.558l10.906,10.906A1.1,1.1,0,0,1,381,57.068" transform="translate(-321.277 -37.504)" fill="#ecf0f1"/>
+    <path id="Path_105" data-name="Path 105" d="M119.5,347.98l-1.415-1.416a1.2,1.2,0,0,1,0-1.7l3.823-3.824,3.117,3.116L121.2,347.98a1.2,1.2,0,0,1-1.7,0" transform="translate(-101.915 -296.872)" fill="#26b99a"/>
+    <path id="Path_106" data-name="Path 106" d="M156.686,252.665h-15.58l-8.882,8.882,7.79,7.79Z" transform="translate(-114.564 -219.715)" fill="#b0d3f0"/>
+    <g id="Group_60" data-name="Group 60" transform="translate(37.135 11.451)">
+      <path id="Path_107" data-name="Path 107" d="M359.265,84.876l3.116,3.117a1.1,1.1,0,0,0,1.558-1.558l-3.116-3.117h0l-1.558,1.558Z" transform="translate(-349.917 -83.318)" fill="#90bae1"/>
+      <path id="Path_108" data-name="Path 108" d="M337.831,112.539a1.1,1.1,0,1,0,1.558-1.558l-3.117-3.116-1.558,1.558Z" transform="translate(-328.483 -104.75)" fill="#90bae1"/>
+      <path id="Path_109" data-name="Path 109" d="M313.289,137.079a1.1,1.1,0,0,0,1.558-1.558l-3.116-3.117-1.558,1.558Z" transform="translate(-307.057 -126.172)" fill="#90bae1"/>
+      <path id="Path_110" data-name="Path 110" d="M285.629,158.512l3.116,3.116a1.1,1.1,0,0,0,1.558-1.558l-3.115-3.116h0l-1.558,1.558Z" transform="translate(-285.629 -147.606)" fill="#90bae1"/>
+    </g>
+    <path id="Path_111" data-name="Path 111" d="M445.106,10.714a1.1,1.1,0,0,1-.779-.323l-7.509-7.51a1.1,1.1,0,1,1,1.558-1.558l7.509,7.51a1.1,1.1,0,0,1-.779,1.881" transform="translate(-380.208)" fill="#ecf0f1"/>
+  </g>
+</svg>

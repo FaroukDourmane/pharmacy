@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.svelte-tabs ul.svelte-tabs__tab-list {
+  margin-bottom: 20px;
+  border-bottom: 0;
+}
+.svelte-tabs ul.svelte-tabs__tab-list li {
+  font-family: "CaviarDreams_Bold";
+  background: #f9f9f9;
+  color: #333;
+  font-size: 15px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+.svelte-tabs ul.svelte-tabs__tab-list li:last-child {
+  margin-right: 0;
+}
+.svelte-tabs ul.svelte-tabs__tab-list li:hover {
+  background: #f1f1f1;
+}
+.svelte-tabs ul.svelte-tabs__tab-list li.svelte-tabs__selected {
+  background: #4491CB;
+  color: #FFF;
+}
+.svelte-tabs .svelte-tabs__tab-panel {
+  font-family: "CaviarDreams_Bold";
+  color: #555;
+}
+
+/*# sourceMappingURL=overviewTabs.css.map */

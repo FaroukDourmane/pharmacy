@@ -1,0 +1,76 @@
+@import 'variables'
+
+.header
+    background: #FFF
+    nav
+        background: #FFF
+        position: relative
+        padding: 15px 20px
+        display: flex
+        &::after
+            content: ""
+            position: absolute
+            top: calc(100% - 1px)
+            left: 0
+            width: 100%
+            height: 29px
+            background: url('/assets/svg/header_shape.svg')
+            background-position: bottom
+            background-size: cover
+        ul
+            list-style: none
+            width: 100%
+            @media screen and (max-width: 830px)
+                display: none
+            li
+                display: inline-block
+                a
+                    display: block
+                    line-height: 40px
+                    font-family: $caviar_bold
+                    font-size: 14px
+                    color: #555555
+                    border: 1px #f1f1f1 solid
+                    padding: 0 20px
+                    border-radius: 5px
+                    img
+                        vertical-align: middle
+                        margin-right: 5px
+                    &:hover
+                        background: #f9f9f9
+                &.active
+                    a
+                        border: 0
+                        border-color: #DEF1FF
+                        background: #DEF1FF
+            &.menuToggler
+                display: none
+                @media screen and (max-width: 830px)
+                    display: block
+                li
+                    a
+                        padding: 0
+                        width: 40px
+                        text-align: center
+                        img
+                            margin: 0
+        .social
+            flex-shrink: 0
+            a
+                display: inline-block
+                &:first-child
+                    padding: 5px
+    .headerBg
+        height: 600px
+        background: url("/assets/img/head-bg.jpg")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        .logoBox
+            height: 200px
+            line-height: 170px
+            background: linear-gradient(#000000d6 70%, transparent)
+            text-align: center
+            img
+                vertical-align: middle
+                height: 60px

@@ -1,0 +1,546 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.workingTime {
+  width: calc(100% - 30px);
+  padding: 0 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 920px) {
+  .workingTime {
+    padding: 0;
+  }
+}
+.workingTime .boxTitle {
+  color: #555555;
+  font-family: "CaviarDreams_Bold";
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.workingTime .boxTitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 90%;
+  height: 1px;
+  background: #DDD;
+}
+.workingTime .boxTitle img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.workingTime .boxTitle span {
+  background: #FFF;
+  padding-right: 20px;
+  position: relative;
+  z-index: 2;
+}
+.workingTime .workingTimeContent {
+  display: flex;
+}
+@media screen and (max-width: 460px) {
+  .workingTime .workingTimeContent {
+    flex-direction: column;
+  }
+}
+.workingTime .workingTimeContent .timeWrapper {
+  width: 100%;
+}
+.workingTime .workingTimeContent .timeWrapper .timeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 650px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer {
+    flex-direction: column;
+    height: 100%;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer {
+    margin-right: 0;
+  }
+}
+.workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper {
+  background: #F9F9F9;
+  border-radius: 20px;
+  font-family: "CaviarDreams_Bold";
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1030px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+.workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper h4 {
+  color: #4491CB;
+  margin-bottom: 10px;
+}
+.workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper h4 span {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper h4 span {
+    display: block;
+    font-size: 13px;
+    color: #999;
+  }
+}
+@media screen and (max-width: 650px) {
+  .workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper h4 span {
+    display: inline-block;
+  }
+}
+.workingTime .workingTimeContent .timeWrapper .timeContainer .dayWrapper h5 {
+  color: #555;
+}
+.workingTime .workingTimeContent .timeWrapper .mapContainer {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 650px) {
+  .workingTime .workingTimeContent .timeWrapper .mapContainer {
+    display: none;
+  }
+}
+.workingTime .workingTimeContent .timeWrapper .mapContainer iframe {
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+}
+.workingTime .workingTimeContent .contactWrapper {
+  flex-shrink: 0;
+  width: 250px;
+  border-radius: 20px;
+  background: #4491CB;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 460px) {
+  .workingTime .workingTimeContent .contactWrapper {
+    width: 100%;
+  }
+}
+.workingTime .workingTimeContent .contactWrapper .callUs, .workingTime .workingTimeContent .contactWrapper .mapLink {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "CaviarDreams_Bold";
+  flex-direction: column;
+}
+.workingTime .workingTimeContent .contactWrapper .callUs h5, .workingTime .workingTimeContent .contactWrapper .mapLink h5 {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+.workingTime .workingTimeContent .contactWrapper .callUs p, .workingTime .workingTimeContent .contactWrapper .mapLink p {
+  font-size: 17px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 460px) {
+  .workingTime .workingTimeContent .contactWrapper .callUs p, .workingTime .workingTimeContent .contactWrapper .mapLink p {
+    width: 100%;
+  }
+}
+.workingTime .workingTimeContent .contactWrapper .callUs a, .workingTime .workingTimeContent .contactWrapper .mapLink a {
+  display: block;
+  border-radius: 10px;
+  background: #FFF;
+  color: #555;
+  line-height: 50px;
+  padding: 0 10px;
+  width: 100%;
+  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.workingTime .workingTimeContent .contactWrapper .callUs a img, .workingTime .workingTimeContent .contactWrapper .mapLink a img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.workingTime .workingTimeContent .contactWrapper .callUs {
+  border-bottom: 1px #FFF dashed;
+  padding-bottom: 20px;
+}
+
+.welcomeContainer {
+  background: #F5F5F5;
+  padding: 50px;
+}
+@media screen and (max-width: 530px) {
+  .welcomeContainer {
+    padding: 20px;
+  }
+}
+.welcomeContainer h1 {
+  text-align: center;
+  font-family: "CaviarDreams_Bold";
+  font-size: 30px;
+  color: #333;
+  position: relative;
+  line-height: 50px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+.welcomeContainer h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 1px;
+  background: #707070;
+}
+.welcomeContainer .aboutWrapper {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 650px) {
+  .welcomeContainer .aboutWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.welcomeContainer .aboutWrapper .aboutBox {
+  display: flex;
+  background: #FFF;
+  border-radius: 20px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+.welcomeContainer .aboutWrapper .aboutBox .coverPic {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  background-color: #f1f1f1;
+  border-radius: 20px 0 0 20px;
+  background-size: cover;
+  background-position: center;
+}
+.welcomeContainer .aboutWrapper .aboutBox .aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.welcomeContainer .aboutWrapper .aboutBox .aboutContent h5, .welcomeContainer .aboutWrapper .aboutBox .aboutContent p, .welcomeContainer .aboutWrapper .aboutBox .aboutContent a {
+  font-family: "CaviarDreams_Bold";
+}
+.welcomeContainer .aboutWrapper .aboutBox .aboutContent h5 {
+  color: #333333;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.welcomeContainer .aboutWrapper .aboutBox .aboutContent p {
+  color: #666666;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.welcomeContainer .aboutWrapper .aboutBox .aboutContent a {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+  background: #4491CB;
+  color: #FFF;
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+}
+.welcomeContainer .aboutWrapper .aboutBox.reverse {
+  flex-direction: row-reverse;
+}
+.welcomeContainer .aboutWrapper .aboutBox.reverse .coverPic {
+  border-radius: 0 20px 20px 0;
+}
+@media screen and (max-width: 650px) {
+  .welcomeContainer .aboutWrapper .aboutBox {
+    flex-direction: column !important;
+    width: 250px;
+  }
+  .welcomeContainer .aboutWrapper .aboutBox .coverPic {
+    width: 100%;
+    border-radius: 20px !important;
+  }
+  .welcomeContainer .aboutWrapper .aboutBox .aboutContent {
+    padding: 10px;
+  }
+  .welcomeContainer .aboutWrapper .aboutBox .aboutContent h5 {
+    font-size: 17px;
+    text-align: center;
+  }
+  .welcomeContainer .aboutWrapper .aboutBox .aboutContent p {
+    font-size: 15px;
+  }
+  .welcomeContainer .aboutWrapper .aboutBox .aboutContent a {
+    width: 100%;
+  }
+}
+.welcomeContainer .servicesContainer .description {
+  text-align: center;
+  font-family: "CaviarDreams_Bold";
+  font-size: 16px;
+  color: #333333;
+}
+.welcomeContainer .servicesContainer .servicesGrid {
+  display: grid;
+  grid-template-columns: 315px 315px;
+  grid-template-rows: 210px 210px;
+  justify-content: center;
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+.welcomeContainer .servicesContainer .servicesGrid .service {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.welcomeContainer .servicesContainer .servicesGrid .service img {
+  margin-bottom: 10px;
+  height: 60px;
+}
+.welcomeContainer .servicesContainer .servicesGrid .service h2 {
+  font-family: "CaviarDreams_Bold";
+  color: #333;
+  font-size: 25px;
+}
+.welcomeContainer .servicesContainer .servicesGrid .service p {
+  font-family: "CaviarDreams_Bold";
+  color: #777777;
+  font-size: 16px;
+  text-align: center;
+}
+@media screen and (max-width: 660px) {
+  .welcomeContainer .servicesContainer .servicesGrid {
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 180px 180px;
+  }
+  .welcomeContainer .servicesContainer .servicesGrid .service {
+    padding: 10px;
+  }
+  .welcomeContainer .servicesContainer .servicesGrid .service img {
+    height: 50px;
+  }
+  .welcomeContainer .servicesContainer .servicesGrid .service h2 {
+    font-size: 20px;
+  }
+  .welcomeContainer .servicesContainer .servicesGrid .service p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .welcomeContainer .servicesContainer .servicesGrid {
+    grid-template-columns: auto;
+    grid-template-rows: 180px 180px 180px 180px;
+  }
+}
+.welcomeContainer .statsContainer {
+  display: grid;
+  grid-template-columns: 190px 190px 240px;
+  grid-template-rows: 130px 130px;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-areas: "a b c" "d e c";
+}
+.welcomeContainer .statsContainer .statBox {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "CaviarDreams_Bold";
+  color: #FFF;
+}
+.welcomeContainer .statsContainer .statBox h2 {
+  font-size: 35px;
+}
+.welcomeContainer .statsContainer .statBox.a {
+  background: #63A5F2;
+}
+.welcomeContainer .statsContainer .statBox.b {
+  background: #37D6B1;
+}
+.welcomeContainer .statsContainer .statBox.d {
+  background: #973AD1;
+}
+.welcomeContainer .statsContainer .statBox.e {
+  background: #973AD1;
+}
+.welcomeContainer .statsContainer .statBox.f {
+  background: #D756E8;
+}
+.welcomeContainer .statsContainer .statBox.c {
+  background: linear-gradient(#63A5F2, #973AD1);
+  grid-area: c;
+}
+@media screen and (max-width: 660px) {
+  .welcomeContainer .statsContainer {
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 130px 130px 130px;
+    grid-template-areas: "a b" "d e" "c c";
+  }
+}
+@media screen and (max-width: 530px) {
+  .welcomeContainer .statsContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 130px 130px 130px 130px;
+    grid-template-areas: "a" "b" "d" "e" "c";
+  }
+}
+
+.overviewContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+.overviewContainer h1.title {
+  text-align: center;
+  font-family: "CaviarDreams_Bold";
+  font-size: 30px;
+  color: #333;
+  position: relative;
+  line-height: 50px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.overviewContainer h1.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 1px;
+  background: #707070;
+}
+.overviewContainer p.description {
+  font-family: "CaviarDreams";
+  color: #555;
+  text-align: center;
+  font-size: 20px;
+}
+.overviewContainer .overviewWrapper {
+  display: flex;
+  margin-top: 50px;
+}
+@media screen and (max-width: 890px) {
+  .overviewContainer .overviewWrapper {
+    flex-direction: column;
+  }
+}
+.overviewContainer .overviewWrapper .overviewContent {
+  padding-right: 20px;
+  border-right: 1px #f1f1f1 solid;
+}
+@media screen and (max-width: 890px) {
+  .overviewContainer .overviewWrapper .overviewContent {
+    border: 1px #f1f1f1 solid;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+.overviewContainer .overviewWrapper .commonQuestions {
+  padding-left: 20px;
+}
+.overviewContainer .overviewWrapper .commonQuestions, .overviewContainer .overviewWrapper .overviewContent {
+  width: 50%;
+}
+@media screen and (max-width: 890px) {
+  .overviewContainer .overviewWrapper .commonQuestions, .overviewContainer .overviewWrapper .overviewContent {
+    width: 100%;
+  }
+}
+.overviewContainer .overviewWrapper .commonQuestions h5, .overviewContainer .overviewWrapper .overviewContent h5 {
+  text-align: center;
+  line-height: 50px;
+  font-family: "CaviarDreams_Bold";
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reviewsContainer {
+  background: #f1f1f1;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 670px) {
+  .reviewsContainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+.reviewsContainer .titleBox {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  top: -45px;
+  border: 5px #F1F1F1 solid;
+  max-width: 1400px;
+}
+.reviewsContainer h1.title {
+  font-family: "CaviarDreams_Bold";
+  color: #333333;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */

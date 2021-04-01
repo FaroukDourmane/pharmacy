@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  background: #FFF;
+}
+.header nav {
+  background: #FFF;
+  position: relative;
+  padding: 15px 20px;
+  display: flex;
+}
+.header nav::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  height: 29px;
+  background: url("/assets/svg/header_shape.svg");
+  background-position: bottom;
+  background-size: cover;
+}
+.header nav ul {
+  list-style: none;
+  width: 100%;
+}
+@media screen and (max-width: 830px) {
+  .header nav ul {
+    display: none;
+  }
+}
+.header nav ul li {
+  display: inline-block;
+}
+.header nav ul li a {
+  display: block;
+  line-height: 40px;
+  font-family: "CaviarDreams_Bold";
+  font-size: 14px;
+  color: #555555;
+  border: 1px #f1f1f1 solid;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+.header nav ul li a img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.header nav ul li a:hover {
+  background: #f9f9f9;
+}
+.header nav ul li.active a {
+  border: 0;
+  border-color: #DEF1FF;
+  background: #DEF1FF;
+}
+.header nav ul.menuToggler {
+  display: none;
+}
+@media screen and (max-width: 830px) {
+  .header nav ul.menuToggler {
+    display: block;
+  }
+}
+.header nav ul.menuToggler li a {
+  padding: 0;
+  width: 40px;
+  text-align: center;
+}
+.header nav ul.menuToggler li a img {
+  margin: 0;
+}
+.header nav .social {
+  flex-shrink: 0;
+}
+.header nav .social a {
+  display: inline-block;
+}
+.header nav .social a:first-child {
+  padding: 5px;
+}
+.header .headerBg {
+  height: 600px;
+  background: url("/assets/img/head-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .headerBg .logoBox {
+  height: 200px;
+  line-height: 170px;
+  background: linear-gradient(#000000d6 70%, transparent);
+  text-align: center;
+}
+.header .headerBg .logoBox img {
+  vertical-align: middle;
+  height: 60px;
+}
+
+/*# sourceMappingURL=header.css.map */
