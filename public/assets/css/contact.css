@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.contactPage {
+  padding: 50px;
+  display: flex;
+  min-height: calc(100vh - 250px);
+}
+@media screen and (max-width: 750px) {
+  .contactPage {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contactPage {
+    padding: 10px;
+  }
+}
+.contactPage .mapWrapper {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 750px) {
+  .contactPage .mapWrapper {
+    margin-right: 0;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+}
+.contactPage .mapWrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.contactPage .formWrapper {
+  width: 100%;
+}
+.contactPage .formWrapper form input, .contactPage .formWrapper form textarea {
+  display: block;
+  background: #F9F9F9;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "CaviarDreams_Bold";
+  color: #555;
+  border: 1px #DDD solid;
+}
+.contactPage .formWrapper form .label {
+  display: flex;
+}
+.contactPage .formWrapper form .label input {
+  width: 50%;
+  padding: 0 10px;
+  line-height: 50px;
+}
+.contactPage .formWrapper form .label input:first-child {
+  margin-right: 10px;
+}
+.contactPage .formWrapper form .label input:last-child {
+  margin-left: 10px;
+}
+@media screen and (max-width: 450px) {
+  .contactPage .formWrapper form .label {
+    flex-direction: column;
+  }
+  .contactPage .formWrapper form .label input {
+    width: 100%;
+  }
+  .contactPage .formWrapper form .label input:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contactPage .formWrapper form .label input:last-child {
+    margin-left: 0;
+  }
+}
+.contactPage .formWrapper form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  resize: none;
+  max-height: 150px;
+  min-height: 150px;
+  margin-top: 20px;
+}
+.contactPage .formWrapper form button[type=submit] {
+  background: #4491CB;
+  font-family: "CaviarDreams_Bold";
+  font-size: 15px;
+  color: #FFF;
+  display: block;
+  width: 200px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: auto;
+  border: 0;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.contactPage .formWrapper .contactInfos {
+  border-top: 1px #DDD solid;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.contactPage .formWrapper .contactInfos p {
+  display: block;
+  font-family: "CaviarDreams_Bold";
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.contactPage .formWrapper .contactInfos p img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.contactPage .formWrapper .contactInfos .socialMedia {
+  margin-top: 20px;
+}
+@media screen and (max-width: 550px) {
+  .contactPage .formWrapper .contactInfos .socialMedia {
+    text-align: center;
+  }
+}
+.contactPage .formWrapper .contactInfos .socialMedia a {
+  display: inline-block;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px #DDDDDD solid;
+  border-radius: 20px;
+}
+.contactPage .formWrapper .contactInfos .socialMedia a:hover {
+  background: #f9f9f9;
+}
+.contactPage .formWrapper .contactInfos .socialMedia a img {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.categoryPage .categoryTitle {
+  font-family: "CaviarDreams_Bold";
+  color: #555;
+  font-size: 25px;
+  padding: 50px 20px;
+  text-align: center;
+}
+.categoryPage .categoryArticles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.categoryPage .categoryArticles .articleBox {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px #DDD solid;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.categoryPage .categoryArticles .articleBox h1 {
+  font-size: 20px;
+  color: #555;
+  font-family: "CaviarDreams_Bold";
+  margin-bottom: 10px;
+}
+.categoryPage .categoryArticles .articleBox p {
+  font-family: "CaviarDreams";
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 100%;
+}
+.categoryPage .categoryArticles .articleBox a {
+  display: block;
+  background: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 50px;
+  font-family: "CaviarDreams_Bold";
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=category.css.map */

@@ -1,0 +1,103 @@
+@import 'variables'
+
+.contactPage
+    padding: 50px
+    display: flex
+    min-height: calc(100vh - 250px)
+    @media screen and (max-width: 750px)
+        flex-direction: column
+    @media screen and (max-width: 550px)
+        padding: 10px
+    .mapWrapper
+        flex-shrink: 0
+        width: 300px
+        margin-right: 20px
+        @media screen and (max-width: 750px)
+            margin-right: 0
+            width: 100%
+            height: 250px
+            margin-bottom: 20px
+        iframe
+            width: 100%
+            height: 100%
+            border-radius: 20px
+    .formWrapper
+        width: 100%
+        form
+            input,textarea
+                display: block
+                background: #F9F9F9
+                border-radius: 15px
+                font-size: 16px
+                font-family: $caviar_bold
+                color: #555
+                border: 1px #DDD solid
+            .label
+                display: flex
+                input                    
+                    width: 50%
+                    padding: 0 10px                    
+                    line-height: 50px
+                    &:first-child
+                        margin-right: 10px
+                    &:last-child
+                        margin-left: 10px
+                @media screen and (max-width: 450px)
+                    flex-direction: column
+                    input
+                        width: 100%
+                        &:first-child
+                            margin-right: 0
+                            margin-bottom: 20px
+                        &:last-child
+                            margin-left: 0
+            textarea
+                min-width: 100%
+                max-width: 100%
+                padding: 10px                
+                resize: none
+                max-height: 150px
+                min-height: 150px
+                margin-top: 20px
+            button[type="submit"]
+                background: $main_color
+                font-family: $caviar_bold
+                font-size: 15px
+                color: #FFF
+                display: block
+                width: 200px
+                text-align: center
+                line-height: 50px
+                margin-left: auto
+                border: 0
+                margin-top: 20px
+                cursor: pointer
+                border-radius: 15px
+        .contactInfos
+            border-top: 1px #DDD solid
+            margin-top: 20px
+            padding-top: 20px
+            p
+                display: block
+                font-family: $caviar_bold
+                color: #555
+                font-size: 15px
+                margin-bottom: 10px
+                img
+                    margin-right: 5px
+                    vertical-align: middle
+            .socialMedia
+                margin-top: 20px
+                @media screen and (max-width: 550px)
+                    text-align: center
+                a
+                    display: inline-block
+                    width: 50px
+                    line-height: 50px
+                    text-align: center
+                    border: 1px #DDDDDD solid
+                    border-radius: 20px
+                    &:hover
+                        background: #f9f9f9
+                    img
+                        vertical-align: middle

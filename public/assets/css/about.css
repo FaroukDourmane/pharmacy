@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("/assets/fonts/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url("/assets/fonts/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.aboutBox {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.aboutBox h1 {
+  font-family: "CaviarDreams_Bold";
+  margin-bottom: 40px;
+  color: #333;
+}
+.aboutBox h5 {
+  font-family: "CaviarDreams_Bold";
+  color: #333;
+  font-size: 15px;
+}
+.aboutBox p {
+  font-family: "CaviarDreams";
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=about.css.map */

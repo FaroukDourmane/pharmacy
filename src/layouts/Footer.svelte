@@ -1,4 +1,5 @@
 <script>
+    import { Link } from 'svelte-navigator';
     import '../../public/assets/css/footer.css';
 </script>
 
@@ -8,7 +9,7 @@
         <div class="linkItem">
             <img src="/assets/svg/big-contact.svg" alt="" />
             <h3>Call us</h3>
-            <a href="#">Contact us</a>
+            <Link to="contact">Contact us</Link>
         </div>
 
         <div class="linkItem">
@@ -20,7 +21,7 @@
         <div class="linkItem">
             <img src="/assets/svg/big-about.svg" alt="" />
             <h3>About us</h3>
-            <a href="#">More informations</a>
+            <Link to="about">More informations</Link>
         </div>
     </div>
 
