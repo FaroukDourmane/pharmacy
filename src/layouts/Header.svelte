@@ -29,7 +29,7 @@
                         <li>Loading...</li>    
                     {:then component} 
                         {#each component as category }
-                            <li> <Link to="category/{category._id}">{category.name}</Link> </li>
+                            <li> <a href="/category/{category.url}">{category.name}</a> </li>
                         {/each}
                     {/await}
 

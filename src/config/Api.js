@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create a instance of axios to use the same base url.
 const axiosAPI = axios.create({
-    baseURL : "http://localhost:3000/"
+    baseURL : "https://pharma-euro.herokuapp.com/"
 });
 
 // implement a method to execute all the request from here.

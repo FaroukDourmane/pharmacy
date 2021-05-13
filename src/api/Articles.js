@@ -1,17 +1,17 @@
 import Api from '../config/Api'
 
-export const getCategories = async () => {
+export const getArticles = async (category) => {
     try {
-        const response = await Api.get(`/categories`);
+        const response = await Api.get(`/articles/${category}`);
         return response.data;
     } catch(error) {
         return error;
     }
 }
 
-export const getCategoryById = async (id) => {
+export const getArticle = async (id) => {
     try {
-        const response = await Api.get(`/categories/${id}`);
+        const response = await Api.get(`/article/${id}`);
         return response.data;
     } catch(error) {
         return error;
