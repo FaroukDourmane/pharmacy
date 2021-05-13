@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "build": "rollup -c --signle",
+        "build": "rollup -c -s --host",
         "dev": "rollup -c -w --signle --host",
         "start": "sirv public --single --host"
     },

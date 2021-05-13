@@ -28,7 +28,7 @@
                     <div class="articleBox">
                         <h1>{article.title}</h1>
                         <p>Read all of this leaflet carefully before you start using this medicine because it contains important information for...</p>
-                        <a href="/article/{article._id}">Read more</a>
+                        <Link to="/article/{article._id}">Read more</Link>
                     </div>
                 {/each}
 

@@ -1,4 +1,5 @@
 <script>
+    export const qualityBox = true;
     import '../../public/assets/css/home.css';
     import OverviewTabs from '../components/OverviewTabs.svelte';
     import CommonQuestions from '../components/CommonQuestions.svelte';
