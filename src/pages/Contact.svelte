@@ -1,8 +1,37 @@
 <script>
     import '../../public/assets/css/contact.css';
     export const qualityBox = false;
-    // inputs
 
+    let name,
+        email,
+        message,
+        loading=false,
+        success=false,
+        error=false;
+
+    import { sendEmail } from './../api/Contact';
+
+    const emailAction = async () => {
+        loading=true;
+
+        const emailSender = await sendEmail({
+            name,
+            email,
+            message
+        });
+
+        if ( emailSender == 200 )
+        {
+            name=email=message="";
+            error=false;
+            success=true;
+        }else{
+            success=false;
+            error=true;            
+        }
+
+        loading=false;
+    }
 </script>
 
 <div class="contactPage">
@@ -11,26 +40,34 @@
 
     <!-- form wrapper -->
     <div class="formWrapper">
-        <form action="">
+        {#if success }
+            <h3 style="font-size: 16px;line-height: 40px;padding: 0 10px;border: 1px #32a541 solid;margin-bottom: 10px;border-radius: 10px;color: #32a541;">Your message was sent successfully !</h3>
+            {:else if error}
+            <h3 style="font-size: 16px;line-height: 40px;padding: 0 10px;border: 1px #DDD solid;margin-bottom: 10px;border-radius: 10px;color: #555;">There was an error while sending your message</h3>
+        {/if}        
+        <form class:loading action="" on:submit|preventDefault={ () => emailAction() }>
             <div class="label">
-                <input type="text" name="" placeholder="You name" required />
-                <input type="email" name="" placeholder="You email" required />
+                <input type="text" name="" placeholder="You name" bind:value={name} required />
+                <input type="email" name="" placeholder="You email" bind:value={email} required />
             </div>
 
-            <textarea name="" placeholder="Your message"></textarea>
-            <button type="submit">Send message</button>
+            <textarea name="" placeholder="Your message" bind:value={message}></textarea>
+            <button type="submit">
+                {#if loading}
+                    Please wait...
+                    {:else}
+                    Send message
+                {/if}
+            </button>
         </form>
 
         <div class="contactInfos">
-            <p> <img src="/assets/svg/phone-call.svg" alt="" /> +972 50-338-1039⁩</p>
             <p> <img src="/assets/svg/email.svg" alt="" /> info@pharma-euro.net</p>
             <p> <img src="/assets/svg/pin.svg" alt="" /> Bourne Business Park, 300 Dashwood Lang Rd, Addlestone KT15 2NX, United Kingdom</p>
 
             <div class="socialMedia">
-                <a href="" target="_blank"> <img src="/assets/svg/fb.svg" alt="" /> </a>
-                <a href="" target="_blank"> <img src="/assets/svg/tt.svg" alt="" /> </a>
-                <a href="" target="_blank"> <img src="/assets/svg/ws.svg" alt="" /> </a>
-                <a href="" target="_blank"> <img src="/assets/svg/gp.svg" alt="" /> </a>
+                <a href="https://www.facebook.com/PharmaEuros" target="_blank"> <img src="/assets/svg/fb.svg" alt="" /> </a>
+                <a href="https://www.twitter.com/EuroPharma2" target="_blank"> <img src="/assets/svg/tt.svg" alt="" /> </a>
             </div>
         </div>
     </div>

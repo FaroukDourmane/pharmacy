@@ -6,8 +6,8 @@
     export const qualityBox=false;
     export let id;
 
-    let articles = getArticles(id);
-    let category = getCategoryById(id);
+    $: articles = getArticles(id);
+    $: category = getCategoryById(id);
 </script>
 
 <div class="categoryPage">

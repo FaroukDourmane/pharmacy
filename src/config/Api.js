@@ -3,6 +3,7 @@ import axios from "axios";
 // Create a instance of axios to use the same base url.
 const axiosAPI = axios.create({
     baseURL : "https://pharma-euro.herokuapp.com/"
+    // baseURL : "http://localhost:3000/"
 });
 
 // implement a method to execute all the request from here.
@@ -11,8 +12,9 @@ const apiRequest = (method, url, request) => {
         'Content-Type': 'application/json'
     };
 
-    request = JSON.stringify(request);
-
+    // request = JSON.stringify(request);
+    console.log(request);
+    
     //using the axios instance to perform the request that received from each http method
     return axiosAPI({
         method,

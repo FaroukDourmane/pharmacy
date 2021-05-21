@@ -24,6 +24,18 @@
     .formWrapper
         width: 100%
         form
+            position: relative
+            &.loading
+                &::after
+                    content: ""
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: #FFF
+                    z-index: 2
+                    opacity: 0.5
             input,textarea
                 display: block
                 background: #F9F9F9

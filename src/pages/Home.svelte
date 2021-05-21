@@ -1,5 +1,6 @@
 <script>
     export const qualityBox = true;
+    import { Link } from 'svelte-navigator'
     import '../../public/assets/css/home.css';
     import OverviewTabs from '../components/OverviewTabs.svelte';
     import CommonQuestions from '../components/CommonQuestions.svelte';
@@ -41,7 +42,7 @@
                 <div class="callUs">
                     <h5>Call us now</h5>
                     <p>We will answer your inquiries as soon as possible</p>
-                    <a href="https://wa.me/972503381039"> <img src="/assets/svg/whatsapp.svg" alt="" /> +972 50-338-1039⁩</a>
+                    <Link to="contact"> <img src="/assets/svg/whatsapp.svg" alt="" /> Contact us</Link>
                 </div>
 
                 <div class="mapLink">
